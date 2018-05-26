@@ -1,0 +1,4 @@
+string color
+---
+int64 epcUpdate
+bool status 

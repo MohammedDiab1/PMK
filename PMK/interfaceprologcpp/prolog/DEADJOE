@@ -1,0 +1,87 @@
+
+*** These modified files were found in JOE when it aborted on Thu Apr 12 15:51:39 2018
+*** JOE was aborted by UNIX signal 1
+
+*** File 'knowledge.pl'
+#:- module(knowledge).
+ 
+ 
+ 
+:- use_module(library('semweb/rdf_db.pl')).
+:- use_module(library('semweb/rdf_edit.pl')).
+:- use_module(library('semweb/rdfs.pl')).
+:- use_module(library('semweb/rdf_portray')).
+:- use_module(library('url.pl')).
+:- use_module(library('http/http_open.pl')).
+
+
+%Setting resources for predicates.
+:-  rdf_meta
+      find_subclass(r,r),
+      object_dimension(r, ?, ?, ?),
+	find_dimension(r, r, r, r).
+	% like(r,r).
+	% grasping_pose(r,r,r,r).
+
+%Parsing and registering OWLs.
+:- rdf_load('/home/diab/catkin_ws/src/interfaceprologcpp/owl/pmk.owl').
+
+:- rdf_db:rdf_register_ns(sir_pmk, 'http://sir.upc.edu/projects/ontologies/kb/mpk.owl#', [keep(true)]).
+
+
+%%%%%%%%%%%%% PROLOG FEATURES %%%%%%%%%%%%
+
+    find_subclass(Class, SubClass):-
+    rdfs_subclass_of(SubClass, Class),
+    SubClass \= Class.
+
+%Removing unnecessary string in literal when reading data values in order to extract only value.
+literal_type_conv(literal(type(_, V)), Value):- atom_to_term(V, Value, _), !.
+%literal_type_conv(Value, Value).
+
+
+%%%%%%%%%%%% READING DATA PROPERTIES FROM THE OWL %%%%%%%%%%%%%
+
+find_dimension(Obj, Depth, Height, Length):-
+    %Reading the object dimension.
+    rdf_has(Obj, sir_pmk:'depthOfObject', D),
+    rdf_has(Obj, sir_pmk:'heightOfObject', H),
+    rdf_has(Obj, sir_pmk:'LengthOfObject', L),
+
+    %Converting literal to value.has
+    literal_type_conv(D, Depth),
+    literal_type_conv(H, Height),
+    literal_type_conv(L, Length).
+    
+ object_color(Artifact, color):-
+rdf_has(Artifact, sir_standardFOclass:'Color', color).
+   
+object_dimension(obj, _, _, _). 
+
+
+
+
+
+
+
+%:- like(a,d).
+%:- grasping_pose(x,y,z,w).
+
+*** File '(Unnamed)'
+svn-commit.tmp
+svn-commit.2.tmp
+svn-commit.2.tmp
+svn-commit.tmp
+svn-commit.tmp
+kauthamConfig.cmake
+CMakeLists.txt
+CMakeLists.txt
+mainfunction.cpp
+mainfunction.cpp
+knowledge.pl
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc

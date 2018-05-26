@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/diab/ontologies/2018/0/untitled-ontology-59" uri="pmk.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1525704314072" name="http://sir.upc.edu/projects/ontologies/kb/mpk.owl" uri="pmk.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525704314072" name="duplicate:http://www.semanticweb.org/diab/ontologies/2018/0/untitled-ontology-61" uri="PMK_1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525704314072" name="duplicate:http://www.semanticweb.org/diab/ontologies/2018/0/untitled-ontology-61" uri="mod.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525704314072" name="duplicate:http://www.semanticweb.org/diab/ontologies/2018/0/untitled-ontology-61" uri="PMK%20(2).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1525704314072" name="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50" uri="pmk_merged.owl"/>
+    </group>
+</catalog>
