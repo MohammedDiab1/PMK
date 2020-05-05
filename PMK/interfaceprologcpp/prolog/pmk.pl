@@ -19,7 +19,7 @@
 
 %Pasring the pmk ontology.
 
-:- rdf_load('/home/users/mohammed.sharafeldeen/catkin_ws_know/PMK/interfaceprologcpp/owl/pmk_merged.owl').
+:- rdf_load('/home/diab/pmk_ws/src/PMK/PMK/interfaceprologcpp/owl/know.owl').
 
 :- rdf_db:rdf_register_ns(sir_pmk, 'http://www.co-ode.org/ontologies/ont.owl#', [keep(true)]).
 

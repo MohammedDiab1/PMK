@@ -1,0 +1,1614 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#"
+     xml:base="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50">
+        <owl:versionIRI rdf:resource="http://sir.upc.edu/projects/ontologies/kb/pmk.owl#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Length -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Length">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#diameter -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#diameter">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasGraspingPose -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasGraspingPose"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#height -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#height">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TemporallyRelated -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#TemporallyRelated">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporallyExtendedStuff"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TimePosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#endTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#endTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporallyRelated"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasDimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasDimension">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasGraspingPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasGraspingPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasGraspingPose -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasGraspingPose">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasGraspingPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasInteractionParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasInteractionParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasManConstrains -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasManConstrains">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasManProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMass -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMass">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasMemory -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasMemory"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasSensingComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasSensingComponent"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isMeasure"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#isRelatedTo"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#memberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#requiredRunTimeAlgo -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#requiredRunTimeAlgo"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#startTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporallyRelated"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporallyExtendedStuff"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TimePosition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#hasObjPos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#hasObjPos">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasManProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Color">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#InteractionParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#InteractionParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Length">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Dimension"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Material">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Material"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#Status">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#diameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#diameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Dimension"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#empty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#empty">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#filled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#filled">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#friction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#friction">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#InteractionParameter"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#glass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#glass">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Material"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Material"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#grasingpose -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#grasingpose">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#height">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Dimension"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m00 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m00">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m01 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m01">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m02 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m02">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m03 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m03">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m04 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m04">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m05 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m05">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m06 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m06">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m07 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m07">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m08 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m08">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m09 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m09">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m10 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m10">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m11 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m11">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m12 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m12">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m13 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m13">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m14 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m14">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#m15 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#m15">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#grasingpose"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#mass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#mass">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Weight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#matrixNumCoulmns -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#matrixNumCoulmns"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#matrixNumRows -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#matrixNumRows">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Matrix"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#partiallyFilled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#partiallyFilled">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Dimension"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ActorClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ActorClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Analouge -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Analouge">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Signal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Antenna -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Antenna">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Artifact -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSObjectClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isRelatedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ArtifactComponent -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ArtifactComponent">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSObjectClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Camera -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Device"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectLocalizationAlgo"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectRecognitionAlgo"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#requiredRunTimeAlgo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ObjectDetectionAlgo"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PerceptualLocalization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ChangeEPCAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ChangeEPCAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Collection -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Collection">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSObjectClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Color -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Color">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhysicalQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ContextReasoningClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ContextReasoningClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Depth -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Depth">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Device -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Device">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SensorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DeviceComponent -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SensorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DeviceGroup -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SensorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Digital -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Digital">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Signal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#DynamicData -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DynamicData">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TagMemory"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ChangeEPCAlgo"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#WriteMemoryAlgo"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadMemoryAlgo"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#requiredRunTimeAlgo"/>
+                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadIDAlgo"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StaticData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#FeatureClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FeatureClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#GraspingPose -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GraspingPose">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Image -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Image">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Material -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Material">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Matrix -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Matrix">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#matrixNumCoulmns"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#matrixNumRows"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObjectDetectionAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectDetectionAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObjectID -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectID">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObjectLocalizationAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectLocalizationAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObjectName -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectName">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ObjectRecognitionAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ObjectRecognitionAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PCL -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PCL">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Depth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Parts -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Parts">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ArtifactComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PerceptualLocalization -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PerceptualLocalization">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#objectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PerceptualObjPose -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PerceptualObjPose">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#objectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhysicalEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhysicalEnvironment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSpaceClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#PhysicalQuantity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PhysicalQuantity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#QualityAggregation -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#QualityAggregation">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FeatureClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Quantity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Quantity">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FeatureClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RFID -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RFID">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RSSI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RSSI -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RSSI">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Analouge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadIDAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadIDAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ReadMemoryAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadMemoryAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Reader -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Reader">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Region -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Region">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSpaceClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Robot -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Robot">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ActorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RobotComponent -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RobotComponent">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ActorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RobotConstrains -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RobotConstrains">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RobotGroup -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RobotGroup">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ActorClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SIFT -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SIFT">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SemanticMap -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SemanticMap">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#WSpaceClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SensorClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SensorClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Signal -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Signal">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ContextReasoningClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SpatialContext -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SpatialContext">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ContextReasoningClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#StaticData -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StaticData">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TagMemory"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReadMemoryAlgo"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#requiredRunTimeAlgo"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReadIDAlgo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Status -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Status">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#objectType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#StereoCam -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StereoCam">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#StorageConstruct -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StorageConstruct">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SemanticMap"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/ontologies/ont.owl#isRelatedTo"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Quantity"/>
+                            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#objectType"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Tag -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Tag">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TagID -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TagID">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TagMemory -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TagMemory">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tag"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TemporalContext -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TemporalContext">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ContextReasoningClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TemporallyExtendedStuff -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TemporallyExtendedStuff">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporalContext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TimeMeasure -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TemporallyExtendedStuff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#TimePosition -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TimePosition">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TimeMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WSObjectClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WSObjectClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WSpaceClass -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WSpaceClass"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Weight -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Weight">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ConstantQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#WriteMemoryAlgo -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#WriteMemoryAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DeviceGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#YuMi -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#YuMi">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RobotComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#black -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#black">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#blue -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#blue">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#green -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#green">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#objectType -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#objectType">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SemanticMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#red -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#red">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#white -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#white">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#yellow -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#yellow">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#2Dcamera -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#2Dcamera">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Camera"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/ontologies/ont.owl#3Dcamera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#3Dcamera -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#3Dcamera">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#ActionClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#ActionClass"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#AtomicFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#AtomicFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#AtomicFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#ActionClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Attributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Attributes">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FeatureClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#FFAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#FFAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#TaskPlanningAlgo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#GeometricPlanningAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#GeometricPlanningAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#MotionPlanningAlgo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#LocateObjAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#LocateObjAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#PerceptionAlgo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#MotionPlanningAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#MotionPlanningAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#PerceptionAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#PerceptionAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#PhysicsPlanningAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#PhysicsPlanningAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#MotionPlanningAlgo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Sub-Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Sub-Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#ActionClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Task">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#ActionClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#TaskPlanningAlgo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#TaskPlanningAlgo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#Algorithms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#boundingBox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#boundingBox">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#QualityAggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Cup -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Cup">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Artifact"/>
+        <ont:hasColor rdf:resource="http://www.co-ode.org/ontologies/ont.owl#color"/>
+        <ont:hasDimension rdf:resource="http://www.co-ode.org/ontologies/ont.owl#diameter"/>
+        <ont:hasDimension rdf:resource="http://www.co-ode.org/ontologies/ont.owl#height"/>
+        <ont:hasDimension rdf:resource="http://www.co-ode.org/ontologies/ont.owl#length"/>
+        <ont:hasGraspingPart rdf:resource="http://www.co-ode.org/ontologies/ont.owl#handle"/>
+        <ont:hasInteractionParameter rdf:resource="http://www.co-ode.org/ontologies/ont.owl#friction"/>
+        <ont:hasMass rdf:resource="http://www.co-ode.org/ontologies/ont.owl#mass"/>
+        <ont:hasMaterial rdf:resource="http://www.co-ode.org/ontologies/ont.owl#glass"/>
+        <ont:hasPart rdf:resource="http://www.co-ode.org/ontologies/ont.owl#container"/>
+        <ont:hasPart rdf:resource="http://www.co-ode.org/ontologies/ont.owl#handle"/>
+        <ont:hasStatus rdf:resource="http://www.co-ode.org/ontologies/ont.owl#objStatus"/>
+        <hasObjPos rdf:resource="http://www.co-ode.org/ontologies/ont.owl#objPos"/>
+        <ont:Color rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red</ont:Color>
+        <ont:Material rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></ont:Material>
+        <ont:friction rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.89</ont:friction>
+        <ont:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2</ont:mass>
+        <ont:Length rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.2</ont:Length>
+        <ont:diameter rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.6</ont:diameter>
+        <ont:hasGraspingPose rdf:resource="http://www.co-ode.org/ontologies/ont.owl#graspPose"/>
+        <ont:height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.78</ont:height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Mem_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Mem_1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TagMemory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Mem_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Mem_2"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RFID -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#RFID">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Artifact"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#RFID"/>
+        <ont:hasSensingComponent rdf:resource="http://www.co-ode.org/ontologies/ont.owl#antenna_1"/>
+        <ont:hasSensingComponent rdf:resource="http://www.co-ode.org/ontologies/ont.owl#reader_1"/>
+        <ont:hasSensingComponent rdf:resource="http://www.co-ode.org/ontologies/ont.owl#tag_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#SemanticEnvironmentMap0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#SemanticEnvironmentMap0">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SemanticMap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#antenna_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#antenna_1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Antenna"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#color -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#color">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#container -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#container">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+        <ont:memberOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Cup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#diameter -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#diameter">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#friction -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#friction">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PhysicalParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#glass -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#glass">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#graspPose -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#graspPose">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#GraspingPose"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Matrix"/>
+        <ont:m00 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.12</ont:m00>
+        <ont:m01 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.035</ont:m01>
+        <ont:m02 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.56</ont:m02>
+        <ont:m03 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.987</ont:m03>
+        <ont:m04 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.987</ont:m04>
+        <ont:m05 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.43</ont:m05>
+        <ont:m06 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.56</ont:m06>
+        <ont:m07 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.88</ont:m07>
+        <ont:m08 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.7839</ont:m08>
+        <ont:m09 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.929</ont:m09>
+        <ont:m10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.223</ont:m10>
+        <ont:m11 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-9.72</ont:m11>
+        <ont:m12 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ont:m12>
+        <ont:m13 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ont:m13>
+        <ont:m14 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</ont:m14>
+        <ont:m15 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</ont:m15>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#handle -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#handle">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+        <ont:memberOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Cup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#height -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#height">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#length -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#length">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SIFT"/>
+        <ont:Length rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.25</ont:Length>
+        <ont:height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.58</ont:height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#mass">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Weight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#objPos -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#objPos">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PerceptualLocalization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#objStatus -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#objStatus">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Status"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#reader_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#reader_1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Reader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#tag_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#tag_1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StaticData"/>
+        <ont:hasMemory rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Mem_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#tag_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#tag_2">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DynamicData"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Parts"/>
+        <ont:hasMemory rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Mem_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#timePosition_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#timePosition_1">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TimePosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#objPos2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohammed.sharafeldeen/ontologies/2018/4/untitled-ontology-50#objPos2">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PerceptualLocalization"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
