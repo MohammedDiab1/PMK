@@ -1,0 +1,3 @@
+"name,action,goal,human,object, robot, task, trustact, type"
+"Situation1, Handover, Drink coffee, Mohammed, Cup, Kinova, Coffee preparation, Trust, Cluttered world"
+"Situation2, Handover, Drink tea, Yahia, Cup, Yumi, Tea preparation, Trust, Cluttered world"
